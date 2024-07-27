@@ -1,29 +1,93 @@
+@import "./style-embed-v3.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  #can_embed_form {
+    background-color: rgb(218, 230, 251) !important;
+    border: none !important;
+    border-radius: 12px;
   }
-}
+  .letter #can_embed_form h2.line {
+    border-bottom: none !important;
+  }
+  #can_embed_form_inner h4 {
+    text-align: left !important;
+  }
+  #can_embed_form_inner > h2 + h4:after {
+    background-color: transparent !important;
+  }
+  .lined_after_title::after,
+  #can_embed_form_inner > h2 + h4::after {
+    background-color: transparent !important;
+  }
+  #action_info {
+    display: none !important;
+  }
+  .can_embed #logo_wrap {
+    display: none !important;
+  }
+  #can_embed_form input[type='text'],
+  #can_embed_form input[type='email'] {
+    border-radius: 12px !important;
+    border-width: 0 !important;
+    font-weight: bold !important;
+    color: black !important;
+  }
+  #can_embed_form ::placeholder {
+    font-weight: bold !important;
+    color: rgb(0, 147, 253) !important;
+  }
+  #can_embed_form .floatlabel-wrapper .floatlabel-label-active {
+    color: black !important;
+    top: -17px !important;
+    text-transform: capitalize !important;
+  }
+  #can_embed_form .floatlabel-wrapper .floatlabel-label:after {
+    background-color: transparent !important;
+  }
+  /* Button */
+  .can_embed .can_button,
+  .can_embed #can_embed_form input[type='submit'],
+  .can_embed #can_embed_form .button,
+  .can_embed #donate_auto_modal input[type='submit'],
+  .can_embed #donate_auto_modal .button {
+    transition:
+      all 0.2s ease,
+      visibility 0s;
+    border-radius: 12px !important;
+    background: #08388b !important;
+    font-size: 20px !important;
+    font-family: Arial !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* Button Hover*/
+  .can_embed .can_button:hover,
+  .can_embed #can_embed_form input[type='submit']:hover,
+  .can_embed #can_embed_form .button:hover,
+  .can_embed #donate_auto_modal input[type='submit']:hover,
+  .can_embed #donate_auto_modal .button:hover {
+    background: #0094ff !important;
+    border: 0px solid #000000;
+    box-shadow: -0.12px 4px 30px -13px #000000;
+  }
+  .can_embed #can_embed_form h1,
+  .can_embed #donate_auto_modal h1,
+  .can_embed #can_embed_form h2,
+  .can_embed #donate_auto_modal h2,
+  .can_embed #can_embed_form h3,
+  .can_embed #donate_auto_modal h3,
+  .can_embed #can_embed_form h4,
+  .can_embed #donate_auto_modal h4,
+  .can_embed #can_embed_form h5,
+  .can_embed #donate_auto_modal h5,
+  .can_embed #can_embed_form h6,
+  .can_embed #donate_auto_modal h6 {
+    color: black !important;
+  }
 }
 
 @layer utilities {
