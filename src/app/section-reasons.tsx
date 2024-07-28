@@ -38,7 +38,7 @@ export default function ReasonsSection() {
       <h2 className="mb-8 text-4xl font-bold text-blue-900">
         Why not Josh Shapiro?
       </h2>
-      <div className="grid gap-10 text-xl sm:grid-cols-2 sm:gap-[6%]">
+      <div className="grid gap-10 text-xl sm:grid-cols-2 sm:gap-x-[4%]">
         {blurbs.map(b => {
           return (
             <div
