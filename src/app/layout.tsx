@@ -8,7 +8,10 @@ const domain = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
   : 'http://localhost:3000'
 
+const baseUrl = new URL(domain)
+
 export const metadata: Metadata = {
+  metadataBase: baseUrl,
   title: 'Say No to Genocide Josh Shapiro!',
   description:
     'We need a strong, pro-working class, pro-ceasefire Democratic ticket this year. Tell Harris to say no to Genocide Josh Shapiro for VP!',
@@ -17,6 +20,19 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@nogenocidejosh',
     images: `${domain}/img/protest-text.png`,
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://nogenocidejosh.com',
+    title: 'Say No to Genocide Josh Shapiro',
+    description:
+      'We need a strong, pro-working class, pro-ceasefire Democratic ticket this year. Tell Harris to say no to Genocide Josh Shapiro for VP!',
+    siteName: 'NoGenocideJosh',
+    images: [
+      {
+        url: '/img/protest-text.png',
+      },
+    ],
   },
   themeColor: '#fef9ec',
 }
