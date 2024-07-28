@@ -2,6 +2,40 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
 
+const blurbs = [
+  {
+    title:
+      'Shapiro supported a GOP proposal to send $100 million of taxpayer dollars to private schools',
+    body: 'Pennsylvania Gov. Josh Shapiro...forcefully put his weight behind a Republican-backed proposal to send $100 million to families for private school tuition and school supplies.',
+    by: '',
+    outlet: 'WHYY',
+    link: 'https://whyy.org/articles/pennsylvanias-governor-josh-shapiro-school-choice/',
+  },
+  {
+    title: 'Shapiro compared peaceful campus protestors to racist KKK ralliers',
+    body: `We have to query whether or not we would tolerate [campus protests] if this were people dressed up in KKK outfits or KKK regalia making comments about people who are African-American in our communities.`,
+    by: 'Josh Shapiro',
+    outlet: 'Mediaite',
+    link: 'https://www.mediaite.com/tv/completely-out-of-control-pennsylvania-governor-slams-pro-palestinian-protests-at-columbia-urges-school-to-restore-order/',
+  },
+  {
+    title:
+      'Shapiro’s office quietly settled a sexual harassment allegation against a top aide',
+    body: 'The agreement has effectively created a wall of secrecy around the allegations against Mike Vereb, one of Shapiro’s most trusted staffers, and how the administration handled them. Vereb resigned late last month after a copy of a complaint signed by Vereb’s accuser began circulating in the Capitol.',
+    by: '',
+    outlet: `WHYY`,
+    link: 'https://whyy.org/articles/pennsylvania-josh-shapiro-mike-vereb-sexual-harassment-settlement/',
+  },
+  {
+    title:
+      'Shapiro has continually opposed a ceasefire and has censored his own staff from speaking up about Gaza',
+    body: `Amid protests over the war in Gaza, Gov. Josh Shapiro has quietly revised his administration’s code of conduct to bar state employees from engaging in “scandalous or disgraceful” behavior — actions that could lead to discipline or termination.`,
+    by: '',
+    outlet: 'Spotlight PA',
+    link: 'https://www.spotlightpa.org/news/2024/05/pennsylvania-josh-shapiro-israel-gaza-protests-palestine-executive-order/',
+  },
+]
+
 export default function Home() {
   return (
     <main className="relative">
@@ -11,8 +45,8 @@ export default function Home() {
           No Genocide Josh
         </h1>
       </header>
-      <div className="mx-auto max-w-[900px] py-10">
-        <section className="grid gap-6 md:grid-cols-11">
+      <div className="py-10">
+        <section className="mx-auto grid max-w-[900px] gap-6 md:grid-cols-11">
           <div className="col-span-6 space-y-6 text-xl font-bold">
             <p className="text-2xl">
               Kamala Harris will assuredly be the new Democratic nominee, and
@@ -96,34 +130,67 @@ export default function Home() {
               of foreign aid going into Gaza and the West Bank.
             </p>
             <p>
-              But winning back the trust of disaffected voters doesn’t end with
-              replacing the top of the ticket. Selecting a Vice Presidential
-              nominee with anti-Palestinian and pro-war views will depress
-              turnout among Muslim, Arab-American, and young voters, and greatly
-              reduce the excitement that comes with a new nominee. Additionally,
-              the new Democratic ticket must strongly support labor’s right to
-              organize, adequate funding and oversight of public schools, a
-              functional and humane immigration system, and robust protections
-              for queer and reproductive rights. A VP nominee who has failed to
-              support the rights of workers and immigrants, diverted public
-              education funding toward for-profit entities, or restricted access
-              to reproductive or gender-affirming care would risk losing the
-              support of millions of working-class voters, including those in
-              swing states crucial to securing victory. To that end, Kamala
-              Harris and her VP nominee must also affirm their support for
-              President Biden’s recently announced plans to offer relief for
-              working-class Americans struggling with the high costs of
-              education, housing, healthcare, and childcare.
+              But winning back the trust of disaffected voters doesn&rsquo;t end
+              with replacing the top of the ticket. Selecting a Vice
+              Presidential nominee with anti-Palestinian and pro-war views will
+              depress turnout among Muslim, Arab-American, and young voters, and
+              greatly reduce the excitement that comes with a new nominee.
+              Additionally, the new Democratic ticket must strongly support
+              labor&rsquo;s right to organize, adequate funding and oversight of
+              public schools, a functional and humane immigration system, and
+              robust protections for queer and reproductive rights. A VP nominee
+              who has failed to support the rights of workers and immigrants,
+              diverted public education funding toward for-profit entities, or
+              restricted access to reproductive or gender-affirming care would
+              risk losing the support of millions of working-class voters,
+              including those in swing states crucial to securing victory. To
+              that end, Kamala Harris and her VP nominee must also affirm their
+              support for President Biden&rsquo;s recently announced plans to
+              offer relief for working-class Americans struggling with the high
+              costs of education, housing, healthcare, and childcare.
             </p>
             <p>
               The left must unite over the next four weeks to ensure that
-              America doesn’t fall down the path of fascism, authoritarianism,
-              and runaway corporatism. It is in Harris' and the Democrats' best
-              interests to listen to their base and ensure that both their new
-              VP pick and their platform support the majority of Democrats and
-              Americans who want social and economic justice for workers and an
-              immediate ceasefire in Palestine.
+              America doesn&rsquo;t fall down the path of fascism,
+              authoritarianism, and runaway corporatism. It is in Harris' and
+              the Democrats' best interests to listen to their base and ensure
+              that both their new VP pick and their platform support the
+              majority of Democrats and Americans who want social and economic
+              justice for workers and an immediate ceasefire in Palestine.
             </p>
+          </div>
+        </section>
+        <section className="w-full bg-[#a9c0e8] py-8 font-normal">
+          <div className="mx-auto max-w-[720px]">
+            <h2 className="my-8 text-4xl font-bold">Why not Josh Shapiro?</h2>
+            <div className="grid grid-cols-2 gap-12 text-xl">
+              {blurbs.map(b => {
+                return (
+                  <div
+                    key={b.link}
+                    className="padding-8 rounded-lg bg-[#fef9ec] p-6"
+                  >
+                    <h3>{b.title}</h3>
+                    <div className="bg-white p-4">
+                      <p>"{b.body}"</p>
+
+                      <p className="align-end text-end">
+                        &nbsp;
+                        {b.by ? <>&ndash; {b.by}</> : null}
+                      </p>
+                      <p>
+                        <Link
+                          className="hover text-blue-600 underline"
+                          href={b.link}
+                        >
+                          {b.outlet}
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </section>
       </div>
