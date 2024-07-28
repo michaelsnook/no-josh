@@ -5,7 +5,7 @@ export default function TopSection() {
   return (
     <div className="mx-auto grid max-w-[900px] grid-cols-1 gap-x-[4%] md:grid-cols-11">
       <Script src="https://actionnetwork.org/widgets/v5/petition/tell-harris-democrats-no-genocide-josh?format=js&source=widget" />
-      <div className="space-y-8 pb-6 text-xl font-bold md:col-span-6 md:py-10">
+      <div className="space-y-8 text-xl font-bold max-md:mb-6 md:col-span-6 md:mt-10">
         <p className="text-2xl">
           Kamala Harris will assuredly be the new Democratic nominee, and now
           she needs to gain the trust of working-class, progressive, and young
