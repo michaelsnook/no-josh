@@ -1,18 +1,20 @@
-@import "./style-embed-v3.css";
-@import "./pasted-styles.css";
+@import './style-embed-v3.css';
+@import './pasted-styles.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body { background-color: #fef9ec; }
+  body {
+    background-color: #fef9ec;
+  }
 }
 
 @layer components {
   #logo_wrap {
     @apply hidden;
   }
-  #can_embed_form>#can_embed_form_inner>#donate_disclaimer {
+  #can_embed_form > #can_embed_form_inner > #donate_disclaimer {
     @apply !pb-4;
   }
 }

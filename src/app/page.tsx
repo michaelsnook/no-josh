@@ -152,9 +152,9 @@ export default function Home() {
             <p>
               The left must unite over the next four weeks to ensure that
               America doesn&rsquo;t fall down the path of fascism,
-              authoritarianism, and runaway corporatism. It is in Harris' and
-              the Democrats' best interests to listen to their base and ensure
-              that both their new VP pick and their platform support the
+              authoritarianism, and runaway corporatism. It is in Harris&apos;s
+              and the Democrats&apos; best interests to listen to their base and
+              ensure that both their new VP pick and their platform support the
               majority of Democrats and Americans who want social and economic
               justice for workers and an immediate ceasefire in Palestine.
             </p>
@@ -172,7 +172,7 @@ export default function Home() {
                   >
                     <h3>{b.title}</h3>
                     <div className="bg-white p-4">
-                      <p>"{b.body}"</p>
+                      <p>&ldquo;{b.body}&rdquo;</p>
 
                       <p className="align-end text-end">
                         &nbsp;
@@ -192,6 +192,9 @@ export default function Home() {
               })}
             </div>
           </div>
+        </section>
+        <section className="">
+          <div className="mx-auto my-10 max-w-[720px] space-y-4"></div>{' '}
         </section>
       </div>
     </main>
