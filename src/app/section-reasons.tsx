@@ -34,18 +34,18 @@ const blurbs = [
 
 export default function ReasonsSection() {
   return (
-    <div className="mx-auto max-w-[720px] font-normal">
+    <div className="mx-auto max-w-[720px] sm:pb-12 sm:font-normal">
       <h2 className="mb-8 text-4xl font-bold text-blue-900">
         Why not Josh Shapiro?
       </h2>
-      <div className="grid grid-cols-2 gap-12 text-xl">
+      <div className="grid gap-10 text-xl sm:grid-cols-2 sm:gap-[6%]">
         {blurbs.map(b => {
           return (
             <div
               key={b.link}
-              className="padding-8 space-y-4 rounded-lg bg-[#fef9ec] p-6"
+              className="bg-beige rounded-lg px-[4%] py-6 sm:px-6"
             >
-              <h3 className="font-bold">{b.title}</h3>
+              <h3 className="mb-4 font-bold">{b.title}</h3>
               <div className="rounded-lg bg-white p-4 outline outline-1">
                 <p>&ldquo;{b.body}&rdquo;</p>
 

@@ -10,13 +10,18 @@
   }
 }
 
+/* these rules won't be tree-shaken by tailwind */
+#logo_wrap {
+  @apply hidden;
+}
+#can_embed_form > #can_embed_form_inner > #donate_disclaimer {
+  @apply !pb-4 !mb-0;
+}
+#can_embed_form #donate_disclaimer {
+  @apply !border-t-0 !pt-0;
+}
+
 @layer components {
-  #logo_wrap {
-    @apply hidden;
-  }
-  #can_embed_form > #can_embed_form_inner > #donate_disclaimer {
-    @apply !pb-4 !mb-0;
-  }
   section {
     @apply py-16 w-full px-px;
   }

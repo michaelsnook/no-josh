@@ -3,9 +3,9 @@ import Script from 'next/script'
 
 export default function TopSection() {
   return (
-    <div className="mx-auto grid max-w-[900px] grid-cols-1 gap-10 md:grid-cols-11">
+    <div className="mx-auto grid max-w-[900px] grid-cols-1 gap-[4%] md:grid-cols-11">
       <Script src="https://actionnetwork.org/widgets/v5/petition/tell-harris-democrats-no-genocide-josh?format=js&source=widget" />
-      <div className="space-y-6 pt-4 text-xl font-bold md:col-span-6">
+      <div className="space-y-6 text-xl font-bold md:col-span-6 md:pt-4">
         <p className="text-2xl">
           Kamala Harris will assuredly be the new Democratic nominee, and now
           she needs to gain the trust of working-class, progressive, and young
@@ -52,7 +52,7 @@ export default function TopSection() {
       </div>
       <div
         id="can-petition-area-tell-harris-democrats-no-genocide-josh"
-        className="md:col-span-5"
+        className="max-md:mb-14 md:col-span-5"
       />
     </div>
   )
