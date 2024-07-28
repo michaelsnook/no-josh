@@ -44,9 +44,7 @@ export default function TopSection() {
         </p>
         <img
           src="/img/protest-sm.png"
-          alt="Protestors oppose the genocide in gaza"
-          width={1024}
-          height={684}
+          alt="Citizens oppose the US's support for the genocide in gaza"
           className="rounded-lg"
         />
       </div>
