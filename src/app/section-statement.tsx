@@ -34,16 +34,18 @@ export default function StatementSection() {
           Democratic ticket must strongly support labor&rsquo;s right to
           organize, adequate funding and oversight of public schools, a
           functional and humane immigration system, and robust protections for
-          queer and reproductive rights. A VP nominee who has failed to support
-          the rights of workers and immigrants, diverted public education
-          funding toward for-profit entities, or restricted access to
-          reproductive or gender-affirming care would risk losing the support of
-          millions of working-class voters, including those in swing states
-          crucial to securing victory. To that end, Kamala Harris and her VP
-          nominee must also affirm their support for President Biden&rsquo;s
-          recently announced plans to offer relief for working-class Americans
-          struggling with the high costs of education, housing, healthcare, and
-          childcare.
+          queer and reproductive rights.
+        </p>
+        <p>
+          A VP nominee who has failed to support the rights of workers and
+          immigrants, diverted public education funding toward for-profit
+          entities, or restricted access to reproductive or gender-affirming
+          care would risk losing the support of millions of working-class
+          voters, including those in swing states crucial to securing victory.
+          To that end, Kamala Harris and her VP nominee must also affirm their
+          support for President Biden&rsquo;s recently announced plans to offer
+          relief for working-class Americans struggling with the high costs of
+          education, housing, healthcare, and childcare.
         </p>
         <p>
           The left must unite over the next four weeks to ensure that America
