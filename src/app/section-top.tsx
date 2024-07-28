@@ -42,8 +42,8 @@ export default function TopSection() {
             Say no to Genocide Josh Shapiro for Vice President!
           </span>
         </p>
-        <Image
-          src="/img/protest.png"
+        <img
+          src="/img/protest-sm.png"
           alt="Protestors oppose the genocide in gaza"
           width={1024}
           height={684}
