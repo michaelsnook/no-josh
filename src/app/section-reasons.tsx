@@ -54,7 +54,7 @@ export default function ReasonsSection() {
                   {b.by ? <>&ndash; {b.by}</> : null}
                 </p>
                 <p>
-                  <a className="hover text-blue-600 underline" href={b.link}>
+                  <a className="text-blue-600 underline" href={b.link}>
                     {b.outlet}
                   </a>
                 </p>

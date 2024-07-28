@@ -25,16 +25,14 @@ export default function Home() {
             groups to publicly pressure the Kamala Harris 2024 campaign to not
             select Josh Shapiro?
           </p>
-          <p>
-            Please fill out{' '}
+          <p className="pt-6">
             <a
               title="Google form to get involved with this coalition"
-              className="underline"
+              className="bg-blue hover:bg-blue-darker rounded-lg px-4 py-3 text-white hover:underline"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeuJR58plXkagN9PByUvQZd9EWooyec7PfCwcfOYGkJd1SpRw/viewform"
             >
-              this form
-            </a>{' '}
-            if so!
+              Click Here to Get Involved
+            </a>
           </p>
         </div>
       </section>

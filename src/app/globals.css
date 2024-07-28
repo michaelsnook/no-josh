@@ -45,10 +45,12 @@
   textarea {
     @apply border-none rounded-lg;
   }
-}
-
-@layer utlities {
   .bg-beige { background-color: #fef9ec; }
   .bg-powder { background-color: rgb(218, 230, 251) }
   .bg-blue { background-color: rgb(29, 88, 186); color: #fff; }
+  .bg-blue-darker { background-color: rgb(24, 77, 156); color: #fff; }
+}
+
+@layer utlities {
+  
 }
