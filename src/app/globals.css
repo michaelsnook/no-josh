@@ -15,6 +15,21 @@
     @apply hidden;
   }
   #can_embed_form > #can_embed_form_inner > #donate_disclaimer {
-    @apply !pb-4;
+    @apply !pb-4 !mb-0;
   }
+  section {
+    @apply py-16 w-full px-px;
+  }
+  section > div {
+    width: 95%;
+  }
+  textarea {
+    @apply border-none rounded-lg;
+  }
+}
+
+@layer utlities {
+  .bg-beige { background-color: #fef9ec; }
+  .bg-powder { background-color: rgb(218, 230, 251) }
+  .bg-blue { background-color: rgb(29, 88, 186); color: #fff; }
 }
