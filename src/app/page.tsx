@@ -1,15 +1,12 @@
 import TopSection from './section-top'
 import StatementSection from './section-statement'
 import ReasonsSection from './section-reasons'
+import Header from './header'
 
 export default function Home() {
   return (
     <main className="relative">
-      <header className="sticky left-0 right-0 top-0 z-50 bg-[#fef9ec] shadow-lg">
-        <h1 className="mx-auto bg-gradient-to-r from-red-500 to-red-900 bg-clip-text py-8 text-center text-6xl font-extrabold uppercase text-transparent">
-          No Genocide Josh
-        </h1>
-      </header>
+      <Header />
       <section className="space-y-10 pt-6">
         <TopSection />
         <StatementSection />

@@ -1,0 +1,10 @@
+.next
+.vercel
+node_modules
+pnpm-lock.yaml
+tsconfig.json
+src/supabase/.temp
+src/types/supabase.ts
+out
+src-tauri/target
+src-tauri/gen
